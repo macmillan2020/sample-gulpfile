@@ -2,9 +2,8 @@
 
 *This is a sample `gulpfile.js` and `package.json` for Drupal 8 theming*
 
-*Before getting started, make sure you have downloaded [Node.js][1].*
+*Before getting started, make sure you have downloaded [Node.js][https://nodejs.org "Node JS"].*
 
-[1]: https://nodejs.org "Node JS"
 ---
 
 ## Installing & Configuring Gulp for your local Drupal 8 project
