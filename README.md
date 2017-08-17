@@ -13,7 +13,7 @@ Before getting started, make sure you have downloaded [Node.js][1].
 + Test your installation by typing `gulp -v` in your command line program
 
 ### 2. Navigate to the current theme directory
-+ Use the command prompt to navigate to the theme you will be using by typing `cd themes/\==THEMENAME==\` (e.g `cd themes/lao`)
++ Use the command prompt to navigate to the theme you will be using by typing `cd themes/*THEMENAME*` (e.g `cd themes/lao`)
 + The remaining commands will be executed in this directory
 
 ### 3. Initialize npm using the command prompt 
@@ -21,8 +21,8 @@ Before getting started, make sure you have downloaded [Node.js][1].
 + In the command prompt, type `npm init`
 + If you do not already have a `package.json` file, typing `npm init` will create one for you. You will be asked a series of questions. Enter a value or hit Enter to accept defaults.
 
-**note:** If you are using Git Bash, you will not be able to confirm the `Is this ok? (yes)` question at the end. This problem seems to only occur in Git Bash. It is recommended that, for this step, you use another command line tool to run the `npm init`
-command.
+==**note:** If you are using Git Bash, you will not be able to confirm the `Is this ok? (yes)` question at the end. This problem seems to only occur in Git Bash. It is recommended that, for this step, you use another command line tool to run the `npm init`
+command.==
 
 ### 4. Install Gulp Locally
 + Type `npm install gulp --save-dev`
