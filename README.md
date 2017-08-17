@@ -54,5 +54,5 @@ gulp.task('browser-sync', () => {
 + Gulp will run and "watch" your files for any changes.
 + Gulp will automatically compile the scss files into one file (style.css) in the css folder.
 
-###4. Exit Gulp by pressing `Ctrl` and `c` at the same time.
+### 4. Exit Gulp by pressing `Ctrl` and `c` at the same time.
 
