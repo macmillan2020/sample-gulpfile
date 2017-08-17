@@ -2,7 +2,7 @@
 
 *This is a sample `gulpfile.js` and `package.json` for Drupal 8 theming*
 
-*Before getting started, make sure you have downloaded [Node.js][https://nodejs.org "Node JS"].*
+*Before getting started, make sure you have downloaded [Node.js](https://nodejs.org "Node JS").*
 
 ---
 
