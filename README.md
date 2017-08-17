@@ -31,14 +31,15 @@
 ### 5.Create a Gulp Configuration File
 + In this case, just use the provided `gulpfile.js` file,which you should place inside your theme folder
 
+---
 
 ## Using this Gulpfile
 
-## 1. Configure your directory structure
+### 1. Configure your directory structure
 + For these tasks to work, your project's directory structure should match the one in the `gulpfile.js`
 + Ensure that you have three folders titled `scss`, `css` and `js` in your theme directory.
 
-## 2. In `gulpfile.js`, change the `browser-sync` path to match your local site
+### 2. In `gulpfile.js`, change the `browser-sync` path to match your local site
 + Locate this code:
 ````
 gulp.task('browser-sync', () => {
@@ -47,8 +48,11 @@ gulp.task('browser-sync', () => {
   })
 });
 ````
-+ Change the `proxy: 'http://get-started-gulp.dd:8083/'` line to reflect your own local site address
++ Change the line `proxy: 'http://get-started-gulp.dd:8083/'`  to reflect your own local site address
 
+### 3. To run Gulp, type `gulp` in the command prompt
++ Gulp will run and "watch" your files for any changes.
++ Gulp will automatically compile the scss files into one file (style.css) in the css folder.
 
-
+###4. Exit Gulp by pressing `Ctrl` and `c` at the same time.
 
