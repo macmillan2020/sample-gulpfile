@@ -7,8 +7,10 @@ const
   concat = require('gulp-concat'),
   autoprefixer = require('gulp-autoprefixer'),
   browserSync = require('browser-sync').create(),
+  exec = require('gulp-exec'),
   reload = browserSync.reload;
 
+//compile scss
 gulp.task('sass', () => {
   return gulp.src('scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -18,15 +20,20 @@ gulp.task('sass', () => {
     .pipe(reload({ stream: true }));
 });
 
-gulp.task('reload', function() {
+//clear cache in Drush
+gulp.task('clearcache', () => {
+  return gulp.src('')
+    .pipe(exec('cd ../.. && drush cr'))
+})
+
+gulp.task('reload', () => {
   browserSync.reload();
 });
 
-
 // configure which files to watch and what tasks to use on file changes
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass']);
-  gulp.watch('css/*.css', ['reload']);
+  gulp.watch('css/*.css', ['clearcache', 'reload']);
   gulp.watch('**/*.{php,inc,info}', ['reload']);
   gulp.watch('js/*.js', ['reload']);
   gulp.watch('templates/*.twig', ['reload']);
@@ -35,7 +42,7 @@ gulp.task('watch', function() {
 
 gulp.task('browser-sync', () => {
   browserSync.init({
-    proxy: 'http://get-started-gulp.dd:8083/'
+    proxy: 'http://drupal-learning.dd:8083/'
   })
 });
 
